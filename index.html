@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload and Download</title>
+</head>
+<body>
+
+<h2>Upload a File</h2>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileUpload" required>
+    <button type="submit" name="submit">Upload</button>
+</form>
+
+<h2>File List</h2>
+<ul>
+    <?php
+    include 'list.php';
+    ?>
+</ul>
+
+</body>
+</html>
